@@ -7,7 +7,7 @@ os.system("pkg install ssh")
 os.system("pkg install php")
 os.system("pkg install wget")
 os.system("pkg install curl")
-
+os.system ("clear")
 tb = open("setp.py").read()
 tb = tb.replace("os.system" ,"#")
 hj = open("setp.py","w")
