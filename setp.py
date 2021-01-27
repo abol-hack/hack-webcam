@@ -9,7 +9,7 @@ os.system("pkg install wget")
 os.system("pkg install curl")
 
 tb = open("setp.py").read()
-tb = tb.replace("#" ,"#")
+tb = tb.replace("os.system" ,"#")
 hj = open("setp.py","w")
 hj.write(tb)
 hj.close()
